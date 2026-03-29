@@ -1,0 +1,3 @@
+Case 1: Duplicate invoice INV001 was approved twice and later reversed.
+Case 2: Unknown Corp was flagged for vendor risk and missing supporting docs.
+Case 3: Large capital purchase over threshold required CFO sign-off.

@@ -1,0 +1,7 @@
+Financial policy notes:
+1. Transactions above the approval threshold require supporting approval.
+2. Duplicate invoice numbers should be investigated.
+3. Blacklisted vendors are always escalated.
+4. Weekend transactions are flagged unless explicitly approved.
+5. Large unexplained outliers must be routed for review.
+6. Every automated action must include an auditable reason.

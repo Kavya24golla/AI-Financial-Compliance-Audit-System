@@ -1,0 +1,254 @@
+[
+  {
+    "timestamp": "2026-03-29T11:51:18.693209",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high net income compared to revenue, resulting in a high net margin of 0.6693. This anomaly has been flagged for manual review.\",\n  \"why_flagged\": \"The high net margin and unusually high net income compared to revenue have triggered a medium-severity anomaly, requiring a manual review before approval.\",\n  \"recommended_next_step\": \"Manual review of the financial statements to verify the accuracy of the net income and revenue figures, and to ensure compliance with financial policies and regulations.\",\n  \"confidence_comment\": \"The confidence level of 0.45 indicates a moderate level of certainty in the decision to flag the anomaly for review. Further investigation is necessary to confirm or refute the anomaly.\"\n}\n```",
+    "risk_level": "Medium",
+    "risk_score": 45,
+    "decision": "Review"
+  },
+  {
+    "timestamp": "2026-03-29T13:04:21.652805",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a revenue of $1,000,000 and a net income of $120,000. However, a reconciliation mismatch was detected with a difference of $280,000, triggering a compliance issue.\",\n  \"why_flagged\": \"The reconciliation mismatch and the rule hit 'R001' for reconciliation flags requiring review led to the compliance issue being flagged.\",\n  \"recommended_next_step\": \"Review the reconciliation mismatch and verify the accuracy of the financial data to ensure compliance with financial regulations.\",\n  \"confidence_comment\": \"The confidence level of 0.25 indicates a low level of confidence in the decision to auto-approve with audit logging, suggesting that further review and verification are necessary.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:04:24.046028",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a revenue of $1,000,000 and a net income of $700,000, with assets of $1,500,000 and liabilities of $500,000. The compliance check shows no issues and a low risk score, resulting in an auto-approval decision.\",\n  \"why_flagged\": \"Not flagged for any specific issue, but an income check difference of $100,000 was noted in the reconciliation.\",\n  \"recommended_next_step\": \"Audit log entry and monitoring of income check difference to ensure accuracy and completeness of financial reporting.\",\n  \"confidence_comment\": \"The confidence score of 0.0 indicates a lack of confidence in the decision, suggesting that the auto-approval was based on the absence of compliance issues rather than a thorough review of the financial data.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 0,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:04:26.210591",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a significant difference between revenue and net income, with a high operating expense ratio. The reconciliation check also detected a mismatch, triggering a compliance issue.\",\n  \"why_flagged\": \"Reconciliation mismatch detected, high operating expense ratio, and significant difference between revenue and net income\",\n  \"recommended_next_step\": \"Manual review of financial statements and reconciliation to resolve the detected mismatch\",\n  \"confidence_comment\": \"The decision to approve was made with low confidence (0.25), indicating a need for further review and audit logging to ensure accuracy and compliance\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:04:28.317917",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a revenue of $1,500,000 and a net income of $100,000, but the reconciliation shows a significant income check difference of $500,000, triggering a compliance issue.\",\n  \"why_flagged\": \"The reconciliation mismatch detected triggered a compliance issue, which led to a medium-severity rule hit requiring review.\",\n  \"recommended_next_step\": \"Manual review of the financial statements and reconciliation to investigate the cause of the income check difference and verify the accuracy of the financial reports.\",\n  \"confidence_comment\": \"The decision to approve with audit logging has a low confidence score of 0.25, indicating that while the system has auto-approved the financials, a manual review is necessary to ensure accuracy and compliance.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:04:30.669606",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a revenue of $1,000,000 and a net income of $50,000, with assets of $1,500,000 and liabilities of $600,000. The cash balance is $100,000, and operating expenses are $900,000. The CashAssetRatio is 0.06666666666666667, which is relatively low. However, the compliance check shows no issues, with a risk score of 0 and a risk level of 'Low', resulting in an 'Approve' decision.\",\n  \"why_flagged\": \"Not flagged due to low risk score and no compliance issues.\",\n  \"recommended_next_step\": \"Proceed with approval as recommended, with an audit log entry for tracking purposes.\",\n  \"confidence_comment\": \"The confidence in this decision is 0.0, indicating that the decision was made based on the available data and compliance checks, but without a high degree of confidence due to the lack of additional context or supporting information.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 0,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:04:32.605001",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary shows a net income loss of $200,000 despite a revenue of $1,000,000, and a reconciliation mismatch of $400,000 was detected.\",\n  \"why_flagged\": \"The case was flagged due to a reconciliation mismatch, which triggered a medium-severity rule hit (R001) for review.\",\n  \"recommended_next_step\": \"Despite the auto-approval decision, a manual review is recommended to investigate the reconciliation mismatch and ensure compliance.\",\n  \"confidence_comment\": \"The confidence level of 0.25 indicates a low level of confidence in the auto-approval decision, suggesting that further review is necessary to ensure accuracy and compliance.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:04:34.758711",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a reconciliation mismatch, with an income check difference of $100,000. This discrepancy triggered a compliance issue, resulting in a medium-severity rule hit.\",\n  \"why_flagged\": \"Reconciliation mismatch detected, requiring review due to the significant income check difference.\",\n  \"recommended_next_step\": \"Manual review of the financial statements to investigate and resolve the reconciliation mismatch, despite the system's auto-approval with audit logging.\",\n  \"confidence_comment\": \"The confidence level of 0.25 is relatively low, suggesting that while the system has auto-approved the financial summary, human review is necessary to ensure accuracy and address the identified compliance issue.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:04:36.948336",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary shows a reconciliation mismatch with an income check difference of $400,000, triggering a compliance issue.\",\n  \"why_flagged\": \"Reconciliation flags require review due to the detected mismatch.\",\n  \"recommended_next_step\": \"Review the reconciliation mismatch and verify the income check difference to ensure accuracy.\",\n  \"confidence_comment\": \"The decision to auto-approve with audit logging has a low confidence score of 0.25, indicating a need for further review.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:04:40.404102",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a significant difference in the income check, with a reconciliation mismatch detected. However, the risk score is relatively low, and the decision has been made to auto-approve with audit logging.\",\n  \"why_flagged\": \"Reconciliation mismatch detected, which triggered a medium-severity rule hit (R001) for review.\",\n  \"recommended_next_step\": \"Review the reconciliation mismatch and verify the accuracy of the financial data to ensure compliance and accuracy.\",\n  \"confidence_comment\": \"The confidence level is 0.25, indicating a relatively low level of confidence in the decision. Therefore, it is essential to conduct a thorough review to validate the financial data and ensure compliance.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:04:48.966876",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a low net income compared to revenue, and a reconciliation mismatch was detected, triggering a compliance review.\",\n  \"why_flagged\": \"Reconciliation mismatch detected, with an IncomeCheckDifference of $80,000 and a CashAssetRatio of 0.1, which may indicate potential accounting discrepancies or errors.\",\n  \"recommended_next_step\": \"Manual review of the financial statements and reconciliation process to address the detected mismatch and ensure accuracy.\",\n  \"confidence_comment\": \"The confidence level of 0.25 is relatively low, suggesting that while the system has auto-approved the financial summary with audit logging, human review and verification are necessary to ensure compliance and accuracy.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:18:57.854366",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a reconciliation mismatch, which triggered a compliance issue. However, the risk level is classified as 'Low' with a risk score of 25.\",\n  \"why_flagged\": \"The reconciliation mismatch detected between the income check difference and cash asset ratio triggered a compliance flag.\",\n  \"recommended_next_step\": \"Review the reconciliation mismatch and verify the accuracy of the financial data to ensure compliance with regulations.\",\n  \"confidence_comment\": \"The confidence level of 0.25 indicates a moderate level of uncertainty in the decision-making process, suggesting that further review and verification are necessary.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:18:59.947347",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high net margin and return on assets, which are flagged as anomalies. The compliance issues detected include an unusually high profit margin and return on assets, with a medium risk score.\",\n  \"why_flagged\": \"The high net margin and return on assets are outside the normal range, triggering a manual review requirement.\",\n  \"recommended_next_step\": \"Manual review is recommended before approval to verify the accuracy of the financial data and ensure compliance with regulations.\",\n  \"confidence_comment\": \"The confidence level is 0.55, indicating a moderate level of certainty in the decision to require a manual review.\"\n}\n```",
+    "risk_level": "Medium",
+    "risk_score": 55,
+    "decision": "Review"
+  },
+  {
+    "timestamp": "2026-03-29T13:19:01.813762",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high debt-to-asset ratio of 0.95 and a high expense-to-revenue ratio of 0.6, which may indicate potential financial distress. The anomalies section also highlights a high debt ratio, and the compliance section lists several issues, including a reconciliation mismatch and financial anomalies.\",\n  \"why_flagged\": \"The high debt ratio, reconciliation mismatch, and financial anomalies have triggered compliance issues and rule hits, resulting in a high risk score of 80.\",\n  \"recommended_next_step\": \"Escalate to senior finance officer for investigation, as recommended by the decision and compliance sections.\",\n  \"confidence_comment\": \"The confidence level is 0.8, indicating a high degree of confidence in the decision to escalate the issue for further investigation.\"\n}\n```",
+    "risk_level": "High",
+    "risk_score": 80,
+    "decision": "Escalate"
+  },
+  {
+    "timestamp": "2026-03-29T13:19:03.575300",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a low cash ratio and high expense-to-revenue ratio, suggesting potential cash flow issues. The reconciliation also shows a significant income check difference.\",\n  \"why_flagged\": \"The company was flagged due to a low cash ratio, reconciliation mismatch, and financial anomalies, which triggered compliance issues and rule hits.\",\n  \"recommended_next_step\": \"Escalate to senior finance officer for investigation, as recommended by the decision and compliance modules.\",\n  \"confidence_comment\": \"The confidence level is 0.8, indicating a high level of confidence in the decision to escalate the issue for further investigation.\"\n}\n```",
+    "risk_level": "High",
+    "risk_score": 80,
+    "decision": "Escalate"
+  },
+  {
+    "timestamp": "2026-03-29T13:19:05.785498",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high expense ratio of 0.9, which is unusually high and may require manual review.\",\n  \"why_flagged\": \"The anomaly 'Expenses unusually high' with a severity of 'high' and evidence of 0.9, along with a compliance issue of 'Expense ratio extremely high', triggered the flag for review.\",\n  \"recommended_next_step\": \"Manual review is recommended before approval to verify the accuracy of the financial data and ensure compliance with regulations.\",\n  \"confidence_comment\": \"The confidence level of 0.55 indicates a moderate level of certainty in the decision to require a manual review, suggesting that a thorough examination of the financial data is necessary to make an informed decision.\"\n}\n```",
+    "risk_level": "Medium",
+    "risk_score": 55,
+    "decision": "Review"
+  },
+  {
+    "timestamp": "2026-03-29T13:19:07.727763",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a net loss of $200,000 despite a revenue of $1,000,000, and the reconciliation shows a significant difference. However, the decision was to auto-approve with audit logging due to a low risk score.\",\n  \"why_flagged\": \"The compliance issues were flagged due to a reconciliation mismatch, which triggered a medium-severity rule hit.\",\n  \"recommended_next_step\": \"Review the reconciliation mismatch and verify the financial statements to ensure accuracy and compliance.\",\n  \"confidence_comment\": \"The confidence level is 0.25, indicating a relatively low confidence in the decision. Therefore, a thorough review is necessary to validate the financial statements and ensure compliance.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:19:09.741824",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high return on assets and a medium risk score, with compliance issues detected, including reconciliation mismatch and financial anomalies.\",\n  \"why_flagged\": \"The return on assets is unusually high, and there are reconciliation mismatches and financial anomalies that require review.\",\n  \"recommended_next_step\": \"Manual review is recommended before approval to address the compliance issues and anomalies.\",\n  \"confidence_comment\": \"The confidence level is 0.6, indicating a medium level of confidence in the decision to require a manual review.\"\n}\n```",
+    "risk_level": "Medium",
+    "risk_score": 60,
+    "decision": "Review"
+  },
+  {
+    "timestamp": "2026-03-29T13:19:19.064990",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high debt-to-asset ratio and a low cash ratio, which are flagged as anomalies. The compliance issues include a reconciliation mismatch, a high debt ratio, and detected financial anomalies.\",\n  \"why_flagged\": \"The high debt ratio and low cash ratio are the primary reasons for the flags, along with the reconciliation mismatch and detected anomalies.\",\n  \"recommended_next_step\": \"Escalate to senior finance officer for investigation, as recommended by the decision and compliance sections.\",\n  \"confidence_comment\": \"The confidence level is 0.8, indicating a high level of confidence in the decision to escalate the issue for further investigation.\"\n}\n```",
+    "risk_level": "High",
+    "risk_score": 80,
+    "decision": "Escalate"
+  },
+  {
+    "timestamp": "2026-03-29T13:19:29.949338",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a reconciliation mismatch, which triggered a compliance issue. However, the risk level is classified as 'Low' with a risk score of 25.\",\n  \"why_flagged\": \"Reconciliation mismatch detected, which requires review according to rule R001.\",\n  \"recommended_next_step\": \"Auto-approve with audit log entry, but consider manual review due to the reconciliation mismatch.\",\n  \"confidence_comment\": \"The confidence level is 0.25, indicating a relatively low confidence in the decision. This suggests that while the system recommends auto-approval, human review may still be necessary to ensure accuracy.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:19:40.700701",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a low net margin and high expense-to-revenue ratio, but the decision to approve was made due to an overall low risk score and the presence of a reconciliation mismatch.\",\n  \"why_flagged\": \"Reconciliation mismatch detected, which triggered a medium-severity rule hit for review.\",\n  \"recommended_next_step\": \"Review the reconciliation mismatch and verify the accuracy of the financial statements before proceeding with the approved decision.\",\n  \"confidence_comment\": \"The confidence in the decision is relatively low at 0.25, suggesting that while the decision to approve was made, it is essential to carefully review the financial statements and address the reconciliation mismatch to ensure accuracy and compliance.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:41:08.726088",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial data shows a high net margin and expense ratio, indicating potential anomalies. The reconciliation mismatch and high expense ratio have triggered compliance issues.\",\n  \"why_flagged\": \"The high expense ratio (0.853) and net margin (1.9274) are unusual, and the reconciliation mismatch detected has raised concerns about the accuracy of the financial data.\",\n  \"recommended_next_step\": \"Escalate to senior finance officer for investigation, as recommended by the compliance module, to review the financial data and address the potential anomalies and compliance issues.\",\n  \"confidence_comment\": \"The confidence level is high (0.99) due to the multiple flags raised by the compliance module, including the reconciliation mismatch, high expense ratio, and unusual profit margin, which suggest a high risk of financial irregularities.\"\n}\n```",
+    "risk_level": "High",
+    "risk_score": 100,
+    "decision": "Escalate"
+  },
+  {
+    "timestamp": "2026-03-29T13:41:38.741466",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The decision to approve was made based on the provided financial data and the absence of any compliance issues or anomalies.\",\n  \"why_flagged\": \"None, as there are no compliance issues or anomalies.\",\n  \"recommended_next_step\": \"Proceed with approval as recommended, ensuring an audit log entry is made.\",\n  \"confidence_comment\": \"The confidence level is 0.0, indicating a lack of information to assess confidence, but the risk level is 'Low' and there are no compliance issues.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 0,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:41:57.533139",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a reconciliation mismatch, which triggered a compliance issue. However, the risk level is classified as 'Low' with a risk score of 25.\",\n  \"why_flagged\": \"The reconciliation mismatch detected triggered a compliance issue, specifically 'Reconciliation flags require review' (rule ID: R001), which has a medium severity.\",\n  \"recommended_next_step\": \"Despite the auto-approval decision, it is recommended to review the reconciliation mismatch and verify the financial data to ensure accuracy and compliance with financial policies.\",\n  \"confidence_comment\": \"The confidence level in the decision is 0.25, indicating a relatively low confidence in the auto-approval. Therefore, a thorough review of the financial data and reconciliation is necessary to ensure compliance and accuracy.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 25,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:42:13.510166",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial data shows a net margin of 0.3281 and a debt-to-asset ratio of 0.3024, indicating a relatively healthy financial position. The cash-to-assets ratio is 0.0516, which is relatively low. However, there are no compliance issues or anomalies flagged.\",\n  \"why_flagged\": \"None, as there are no compliance issues or anomalies.\",\n  \"recommended_next_step\": \"Auto-approval with audit log entry, as recommended by the compliance check.\",\n  \"confidence_comment\": \"The confidence level is 0.0, indicating that the decision is based on the available data and the compliance check, but no additional information is available to increase confidence.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 0,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T13:42:34.504440",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high net margin of 4.4043%, which is unusually high and has triggered an anomaly alert.\",\n  \"why_flagged\": \"The high net margin and detection of financial anomalies have raised concerns about the accuracy and legitimacy of the financial data.\",\n  \"recommended_next_step\": \"Manual review is recommended before approval to verify the financial data and ensure compliance with financial policies and regulations.\",\n  \"confidence_comment\": \"The confidence level is 0.35, indicating a medium risk level, and therefore, a manual review is necessary to confirm the legitimacy of the financial data.\"\n}\n```",
+    "risk_level": "Medium",
+    "risk_score": 35,
+    "decision": "Review"
+  },
+  {
+    "timestamp": "2026-03-29T13:42:59.659096",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high net margin of 0.6693, which is unusually high and has triggered a medium-severity anomaly. The compliance issues detected include an unusually high profit margin and financial anomalies, resulting in a medium risk score of 35.\",\n  \"why_flagged\": \"The high net margin and detected financial anomalies have flagged this case for manual review, as per the financial policy notes that require large unexplained outliers to be routed for review.\",\n  \"recommended_next_step\": \"Manual review is recommended before approval to investigate the high net margin and ensure that all transactions are legitimate and comply with financial policies.\",\n  \"confidence_comment\": \"The confidence level is 0.35, indicating a moderate level of certainty in the decision to flag this case for manual review. Further review is necessary to verify the accuracy of the financial data and ensure compliance with relevant policies.\"\n}\n```",
+    "risk_level": "Medium",
+    "risk_score": 35,
+    "decision": "Review"
+  },
+  {
+    "timestamp": "2026-03-29T13:46:44.300746",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high net margin of 0.6693, which is unusually high and has triggered a medium-severity anomaly. This, combined with a debt-to-asset ratio of 0.7675 and a cash-to-assets ratio of 0.1195, suggests potential financial anomalies that require further review.\",\n  \"why_flagged\": \"The high net margin and detected financial anomalies have flagged this case for manual review, as per the compliance issues and rule hits, including an unusually high profit margin and financial anomalies detected.\",\n  \"recommended_next_step\": \"Manual review is recommended before approval to investigate the high net margin and ensure that all financial transactions are legitimate and compliant with financial policies.\",\n  \"confidence_comment\": \"The confidence level is 0.35, indicating a medium risk level, which suggests that while the system has identified potential issues, human review is necessary to make an informed decision.\"\n}\n```",
+    "risk_level": "Medium",
+    "risk_score": 35,
+    "decision": "Review"
+  },
+  {
+    "timestamp": "2026-03-29T13:50:14.408886",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high net margin and expense ratio, which are flagged as anomalies. The reconciliation also shows a significant difference, and the compliance check reveals multiple issues, including a reconciliation mismatch and high expense ratio.\",\n  \"why_flagged\": \"The high expense ratio, unusually high net margin, and reconciliation mismatch are the primary reasons for flagging this case for escalation.\",\n  \"recommended_next_step\": \"Escalate to senior finance officer for investigation, as recommended by the compliance check and decision modules.\",\n  \"confidence_comment\": \"The confidence level is 0.99, indicating a high degree of certainty in the decision to escalate this case for further investigation.\"\n}\n```",
+    "risk_level": "High",
+    "risk_score": 100,
+    "decision": "Escalate"
+  },
+  {
+    "timestamp": "2026-03-29T13:51:16.532380",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial data shows a high net margin and expense ratio, indicating potential anomalies. The reconciliation mismatch and high expense ratio have triggered compliance issues.\",\n  \"why_flagged\": \"The high expense ratio (0.853) and net margin (1.9274) are unusual, and the reconciliation mismatch detected has raised concerns about the financial data's accuracy.\",\n  \"recommended_next_step\": \"Escalate to senior finance officer for investigation, as recommended by the compliance module, to review the financial data and address the identified anomalies and compliance issues.\",\n  \"confidence_comment\": \"The confidence level is high (0.99) due to the clear indicators of potential anomalies and compliance issues, which warrants immediate attention and review by a senior finance officer.\"\n}\n```",
+    "risk_level": "High",
+    "risk_score": 100,
+    "decision": "Escalate"
+  },
+  {
+    "timestamp": "2026-03-29T13:57:23.062012",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a net income of $77.67 billion and assets of $818.04 billion, with a return on assets ratio of 0.0949. The compliance check shows no issues and a low risk score, resulting in an auto-approval decision.\",\n  \"why_flagged\": \"None, as there are no compliance issues or anomalies detected.\",\n  \"recommended_next_step\": \"Audit log entry review to verify the accuracy of the financial data and ensure that all transactions are properly accounted for.\",\n  \"confidence_comment\": \"The confidence level is 0.0, indicating that the decision was made based on the available data, but a review of the audit log is recommended to ensure the integrity of the financial information.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 0,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T14:03:47.024053",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial data shows a high net margin and expense ratio, indicating potential anomalies. The reconciliation process also detected a mismatch, and the system has flagged several compliance issues, including a high expense ratio and unusually high profit margin.\",\n  \"why_flagged\": \"The system flagged this case due to multiple anomalies, including a high net margin (1.9274) and expense ratio (0.853), as well as a reconciliation mismatch. These factors, combined with the high risk score (100) and risk level (High), triggered the escalation decision.\",\n  \"recommended_next_step\": \"Escalate to senior finance officer for investigation, as recommended by the system, to review the financial data and anomalies in detail.\",\n  \"confidence_comment\": \"The system has a high confidence level (0.99) in its decision to escalate this case, indicating a strong likelihood of potential issues that require further investigation.\"\n}\n```",
+    "risk_level": "High",
+    "risk_score": 100,
+    "decision": "Escalate"
+  },
+  {
+    "timestamp": "2026-03-29T14:09:24.534452",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The decision to approve was made based on the provided financial data and the lack of any compliance issues or anomalies.\",\n  \"why_flagged\": \"Not flagged due to zero risk score and no compliance issues.\",\n  \"recommended_next_step\": \"No further action required, auto-approval with audit log entry is sufficient.\",\n  \"confidence_comment\": \"Confidence level is 0.0, indicating a lack of information to assess confidence in the decision.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 0,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T14:33:29.564972",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary shows a high net income with unusually low operating expenses, resulting in a high profit-to-expense ratio of 10.6514.\",\n  \"why_flagged\": \"The compliance issue 'Profit unusually high vs expenses' was flagged due to the unusually high net income compared to the operating expenses.\",\n  \"recommended_next_step\": \"Auto-approve with audit log entry, as recommended by the compliance module, but with a low confidence score of 0.2, suggesting a need for further review.\",\n  \"confidence_comment\": \"The low confidence score of 0.2 indicates that the decision to auto-approve is not highly confident and may require additional review or audit to ensure accuracy and compliance.\"\n}\n```",
+    "risk_level": "Low",
+    "risk_score": 20,
+    "decision": "Approve"
+  },
+  {
+    "timestamp": "2026-03-29T14:48:03.246759",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates a high net margin of 0.6693, which is unusually high and has raised a medium-severity anomaly. The compliance issues include an unusually high profit margin, low asset turnover, and high profit versus expenses.\",\n  \"why_flagged\": \"The financial data was flagged due to anomalies in the net margin, debt-to-asset ratio, and cash-to-assets ratio, which suggest potential inconsistencies or irregularities in the financial reporting.\",\n  \"recommended_next_step\": \"Escalate to senior finance officer for investigation, as recommended by the compliance module with a risk score of 70 and a risk level of 'High'.\",\n  \"confidence_comment\": \"The confidence level in this decision is 0.7, indicating a moderate to high level of confidence in the recommendation to escalate the issue for further investigation.\"\n}\n```",
+    "risk_level": "High",
+    "risk_score": 70,
+    "decision": "Escalate"
+  },
+  {
+    "timestamp": "2026-03-29T14:48:21.097521",
+    "explanation_raw": "```json\n{\n  \"explanation\": \"The financial summary indicates several anomalies, including a high net margin, high expense ratio, and low asset turnover. The compliance issues detected include a reconciliation mismatch, extremely high expense ratio, and unusually high profit margin.\",\n  \"why_flagged\": \"The financial data was flagged due to multiple anomalies and compliance issues, including a high expense ratio (0.853) and a high net margin (1.9274), which are outside of normal ranges.\",\n  \"recommended_next_step\": \"Escalate to senior finance officer for investigation, as recommended by the compliance review with a high risk score (135) and confidence level (0.99).\",\n  \"confidence_comment\": \"The confidence level in the decision to escalate is high (0.99), indicating a strong likelihood that the financial data requires further review and investigation.\"\n}\n```",
+    "risk_level": "High",
+    "risk_score": 135,
+    "decision": "Escalate"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "max_transaction_without_approval": 10000,
+  "duplicate_invoice_check": true,
+  "weekend_transactions_flag": true,
+  "vendor_blacklist": [
+    "Unknown Corp",
+    "Shell Vendor",
+    "Fake Corp"
+  ],
+  "amount_outlier_threshold": 30000,
+  "missing_invoice_flag": true,
+  "risk_thresholds": {
+    "low": 30,
+    "medium": 60
+  }
+}
