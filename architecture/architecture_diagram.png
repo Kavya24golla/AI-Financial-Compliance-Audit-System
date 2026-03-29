@@ -1,1 +1,25 @@
-placeholder
+SEC EDGAR Data
+      ↓
+Parser Agent
+      ↓
+Financial Ratio Engine
+      ↓
+Reconciliation Agent
+      ↓
+Anomaly Detection
+      ↓
+Compliance Rule Engine
+      ↓
+Decision Agent
+      ↓
+Vector DB (RAG)
+      ↓
+Groq LLM Reasoning
+      ↓
+Report Generator
+      ↓
+Audit Logs
+      ↓
+Evaluation Engine
+      ↓
+Streamlit Dashboard (Download Reports)
