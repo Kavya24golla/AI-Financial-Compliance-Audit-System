@@ -11,17 +11,28 @@ domain expertise, compliance guardrails, edge-case handling, full task completio
 - Produces a decision with reasons
 - Writes a complete audit trail
 - Generates a report
-- Offers a Streamlit dashboard and chat-style report queries
+- Offers a human-readable React dashboard backed by a FastAPI service
 
 ## How to run
 ```bash
 pip install -r requirements.txt
-python main.py
-streamlit run ui/streamlit_app.py
+uvicorn api.app:app --reload
+cd frontend
+npm install
+npm run dev
 ```
 
+Backend runs on `http://127.0.0.1:8000`.
+Frontend runs on `http://127.0.0.1:5173`.
+
+## Website experience
+- Choose a company from a simple dropdown
+- Run the compliance review
+- Read a plain-English summary of the result
+- See key financial metrics, issues, anomalies, and the agent timeline without raw JSON overload
+
 ## Default demo data
-The app can create a sample dataset automatically if no data is present.
+SEC filing caches and knowledge-base assets are already included for demo use.
 
 ## Evaluation fit
 This project emphasizes:
