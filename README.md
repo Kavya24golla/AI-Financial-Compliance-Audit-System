@@ -1,306 +1,256 @@
-# AI Financial Compliance & Audit System
+# 🚀 AI Financial Compliance & Audit System
 
-**AI Financial Compliance & Audit System** is a multi-agent AI system that analyzes SEC filings, detects financial anomalies, applies compliance rules, assigns risk scores, explains decisions using LLMs, and maintains a full audit trail.
-## What it does
-- Ingests financial transactions and optional filing-like data
-- Reconciles transactions
-- Detects anomalies and assigns a risk score
-- Applies compliance rules
-- Produces a decision with reasons
-- Writes a complete audit trail
-- Generates a report
-- Offers a human-readable React dashboard backed by a FastAPI service
+> **Multi-Agent AI platform for financial analysis, anomaly detection, compliance automation, and explainable audit decisions using RAG + LLMs.**
 
-## How to run
-```bash
+---
+
+## 🏆 Overview
+
+The **AI Financial Compliance & Audit System** is a full-stack intelligent platform that automates financial compliance workflows by combining:
+
+- Multi-agent AI architecture  
+- Retrieval-Augmented Generation (RAG)  
+- Large Language Models (LLMs)  
+- Rule-based compliance engines  
+
+It transforms traditional auditing from a **manual, slow, and error-prone process** into an **automated, explainable, and scalable system**.
+
+---
+
+## ✨ Key Features
+
+- 📊 SEC Filing Analysis (EDGAR-based data)
+- ⚠️ Financial Anomaly Detection & Risk Scoring
+- 📏 Rule-Based Compliance Engine
+- 🤖 Multi-Agent AI Architecture
+- 🔎 Hybrid RAG (FAISS + BM25)
+- 💬 Explainable AI Decisions (LLM-powered)
+- 📜 Full Audit Trail Logging
+- 🌐 Interactive Dashboard (React + FastAPI)
+- 🎯 Decision Support (Approve / Review / Escalate)
+
+---
+
+## 🧠 Problem
+
+Financial compliance today is:
+
+- Manual and time-consuming  
+- Expensive to scale  
+- Error-prone  
+- Lacking transparency  
+- Difficult to audit and explain  
+
+---
+
+## ✅ Solution
+
+This system introduces an **AI-driven compliance pipeline** that:
+
+1. Ingests financial data (SEC filings)  
+2. Analyzes financial metrics  
+3. Detects anomalies and risks  
+4. Applies compliance rules  
+5. Generates decisions  
+6. Explains decisions using LLMs  
+7. Logs everything for audit traceability  
+
+---
+
+## ⚙️ System Architecture
+User Interface (React)
+↓
+FastAPI Backend
+↓
+Multi-Agent Pipeline
+├── Retrieval Agent
+├── Analysis Agent
+├── Compliance Agent
+├── Decision Agent
+↓
+RAG Layer (FAISS + BM25)
+↓
+LLM Reasoning Layer
+↓
+Audit Logs + Memory
+↓
+Final Response (Dashboard)
+
+---
+
+## 🧩 Core Components
+
+### 🔹 Retrieval Agent
+Fetches financial filings and relevant compliance policies.
+
+### 🔹 Analysis Agent
+Computes financial ratios and detects anomalies.
+
+### 🔹 Compliance Agent
+Applies predefined regulatory and business rules.
+
+### 🔹 Decision Agent
+Generates final outcomes:
+- ✅ Approve  
+- ⚠️ Review  
+- 🚨 Escalate  
+
+### 🔹 Explainability Layer
+Uses LLMs to generate human-readable justifications.
+
+### 🔹 Audit Logger
+Maintains complete traceability of all operations.
+
+---
+
+## 🖼️ Visuals
+
+### 📌 Architecture Diagram
+![Architecture](assets/architecture.png)
+
+### 📌 Dashboard Preview
+![Dashboard](assets/demo.png)
+
+---
+
+## 🏗️ Tech Stack
+
+### Backend
+- FastAPI
+- Python
+
+### Frontend
+- React (Vite)
+
+### AI / ML
+- RAG (Retrieval-Augmented Generation)
+- FAISS (Vector Search)
+- BM25 (Keyword Search)
+- Transformers
+
+### LLM
+- Groq API / Local Models
+
+### Data
+- SEC EDGAR
+
+### Tools
+- Docker
+- Git
+- MLflow (optional)
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+- Python 3.10+
+- Node.js 18+
+- npm
+- Git
+
+---
+
+### 📥 Clone Repository
+git clone https://github.com/your-username/ai-financial-compliance-audit-system.git
+
+---
+
+### ⚙️ Backend Setup
 pip install -r requirements.txt
 uvicorn api.app:app --reload
+
+
+### 3️⃣ Frontend
 cd frontend
 npm install
 npm run dev
-```
-
-Backend runs on `http://127.0.0.1:8000`.
-Frontend runs on `http://127.0.0.1:5173`.
-
-## Website experience
-- Choose a company from a simple dropdown
-- Run the compliance review
-- Read a plain-English summary of the result
-- See key financial metrics, issues, anomalies, and the agent timeline without raw JSON overload
-
-## Default demo data
-SEC filing caches and knowledge-base assets are already included for demo use.
-=======
----
-
-## Overview
-
-This system automates the financial compliance and audit workflow by processing SEC EDGAR filings, extracting financial statements, calculating ratios, detecting anomalies, applying rule-based compliance checks, and generating explainable decisions using Retrieval Augmented Generation (RAG) and Large Language Models (LLMs).
-
-
-It simulates a real-world financial compliance environment where analysts review statements, enforce policies, and document decisions.
 
 ---
 
-## Problem Statement
+## 🔄 Example Flow
 
-Financial compliance and auditing of company financial statements is:
-
-- Time-consuming  
-- Expensive  
-- Prone to human error  
-
-Analysts must:
-- Analyze financial ratios  
-- Detect anomalies  
-- Validate accounting consistency  
-- Apply compliance policies  
-- Assign risk scores  
-- Explain decisions  
-- Maintain audit logs  
-
-This system automates the entire pipeline.
-
----
-
-## Solution Overview
-
-The system performs:
-
-1. Fetches financial data from SEC EDGAR  
-2. Extracts and processes financial statements  
-3. Calculates financial ratios  
-4. Performs reconciliation checks  
-5. Detects anomalies  
-6. Applies compliance rules  
-7. Assigns risk scores  
-8. Generates decisions (**Approve / Review / Escalate**)  
-9. Retrieves policies using RAG  
-10. Generates LLM-based explanations  
-11. Creates compliance reports  
-12. Maintains a complete audit trail  
-13. Displays results via dashboard  
-
----
-
-## System Architecture
-
-EDGAR Agent → Parser Agent → Ratio Engine → Reconciliation Agent →  
-Anomaly Agent → Compliance Agent → Decision Agent →  
-RAG Agent → LLM Reasoning Agent → Report Agent → Audit Agent → UI
-
----
-
-## Features
-
-- SEC EDGAR data ingestion  
-- Financial ratio analysis  
-- Reconciliation checks  
-- Anomaly detection  
-- Rule-based compliance engine  
-- Risk scoring system  
-- Automated decision engine  
-- RAG-based knowledge retrieval  
-- LLM-generated explanations  
-- Compliance report generation  
-- Full audit trail logging  
-- Evaluation and testing pipeline  
-- Streamlit dashboard  
-- Downloadable reports  
-
----
-
-## Financial Ratios Used
-
-- Net Margin  
-- Debt to Asset Ratio  
-- Cash Ratio  
-- Expense Ratio  
-- Return on Assets  
-- Current Ratio  
-- Asset Turnover  
-- Profit to Expense Ratio  
-
----
-
-## Compliance & Risk Rules
-
-The system detects:
-
-- High debt ratio  
-- Low cash ratio  
-- Unusual profit margins  
-- High expense ratio  
-- Low liquidity  
-- Reconciliation mismatches  
-- Multiple anomalies  
-
-Outputs:
-
-- Risk Score  
-- Risk Level (**Low / Medium / High**)  
-- Recommendation  
-- Final Decision  
-
----
-
-## Audit Trail
-
-Every step is logged:
-
-- Data extraction  
-- Ratio computation  
-- Reconciliation results  
-- Anomaly detection  
-- Rule triggers  
-- Risk scoring  
-- Decision making  
-- Report generation  
-- LLM explanations  
-
----
-
-## Evaluation Focus
-
-- Financial domain expertise  
-- Compliance rule enforcement  
-- Edge-case handling  
-- End-to-end pipeline execution  
-- Decision auditability  
-
----
-
-## Demo Workflow
-
-1. Select company  
+1. Select a company  
 2. Run analysis  
-3. View financial summary  
-4. Check ratios  
-5. Review anomalies  
-6. See compliance results  
-7. Analyze risk score  
-8. View final decision  
-9. Read AI explanation  
-10. Download report  
-11. Inspect audit logs  
+3. System computes:
+   - Financial ratios  
+   - Risk score  
+   - Compliance status  
+4. Outputs:
+   - Decision (Approve / Review / Escalate)  
+   - AI-generated explanation  
 
 ---
 
-## Technologies Used
+## 📊 Example Output
 
-- Python  
-- SEC EDGAR API  
-- Financial Analysis  
-- Rule-Based Systems  
-- Retrieval Augmented Generation (RAG)  
-- Groq LLM API  
-- Streamlit  
-- JSON Logging  
+
+Risk Score: 72 (High Risk)
+Decision: Escalate
+Reason: High leverage ratio + liquidity concerns
+Explanation: Generated using RAG + LLM reasoning
 
 ---
 
-## Project Structure
+## 🌍 Real-World Impact
 
-agents/  
-tools/  
-orchestration/  
-memory/  
-evaluation/  
-ui/  
-data/  
-reports/  
-main.py  
-requirements.txt  
-README.md  
+This system can be used in:
+
+- 🏦 Banking risk analysis  
+- 💳 FinTech compliance systems  
+- 🕵️ Fraud detection pipelines  
+- 📜 Regulatory automation  
+- 📊 Internal audit systems  
 
 ---
 
-## How to Run
+## 🔮 Future Vision
 
-### Install dependencies  
-pip install -r requirements.txt  
-
-### Run application  
-streamlit run ui/streamlit_app.py  
-
----
-
-## Dashboard Outputs
-
-- Financial summary  
-- Ratio analysis  
-- Anomaly detection  
-- Compliance results  
-- Risk scoring  
-- Final decision  
-- AI explanation  
-- Downloadable reports  
-- Audit logs  
+- Real-time compliance monitoring  
+- Autonomous AI auditors  
+- Cross-company benchmarking  
+- Cloud-native deployment  
+- Advanced fraud intelligence models  
 
 ---
 
-## Impact
+## 🧑‍💻 Author
 
-- Reduces manual audit workload  
-- Detects anomalies faster  
-- Improves compliance accuracy  
-- Provides explainable AI decisions  
-- Maintains regulatory audit logs  
+**Kavya Golla**  
+🔗 https://github.com/Kavya24golla  
 
 ---
 
-## Real-World Applications
+## ⭐ What Makes This Top 1%
 
-This system can be used in real-world financial environments such as:
+Most projects show:
+> "I built a model"
 
-- Corporate financial compliance review  
-- Internal and external auditing  
-- Banking risk assessment  
-- Financial fraud detection  
-- Regulatory financial monitoring  
-- Investment risk analysis  
-- Due diligence automation  
-- Accounting anomaly detection  
+This project shows:
+> "I built a **complete AI system**"
 
-Financial institutions, auditing firms, and corporate finance teams can use such systems to automate compliance checks and financial risk analysis.
+That’s the difference recruiters look for.
 
 ---
 
-## Future Scope
+## 🚨 Final Insight
 
-This system can be extended further by:
+This is not just a project.
 
-- Adding fraud detection models  
-- Performing financial trend and time-series analysis  
-- Integrating regulatory rule databases  
-- Adding real-time financial monitoring  
-- Multi-company financial comparison  
-- Automated compliance alerts  
-- Cloud deployment for enterprise usage  
-- Advanced financial forecasting  
-- Integration with ERP and accounting systems  
+It’s a **proof of capability** in:
+- AI Engineering  
+- System Design  
+- Real-world problem solving  
 
 ---
 
-## Submission Requirements
+<p align="center">
+  <b>If AI is the future — this is how systems will be built.</b>
+</p>
 
-| Field | Content |
-|------|--------|
-| Detailed document | PDF |
-| Architecture diagram | Image/PDF |
-| GitHub URL | Repository link |
-| Video link | Google Drive |
-| Demo upload | MP4 |
 
----
 
-## Pitch Line
 
-**AI Financial Compliance & Audit System is a multi-agent AI system that analyzes SEC filings, detects financial anomalies, applies compliance rules, assigns risk scores, explains decisions using LLMs, and maintains a full audit trail.**
 
----
 
-## Conclusion
 
-This project demonstrates how multi-agent AI can automate financial compliance, risk analysis, decision-making, reporting, and auditing in a single integrated system.
