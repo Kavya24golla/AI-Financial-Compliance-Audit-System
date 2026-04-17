@@ -105,7 +105,7 @@ Maintains complete traceability of all operations.
 
 
 ### 📌 Dashboard Preview
-![Dashboard](demo.png)
+![Dashboard](demo.png.png)
 
 ---
 
