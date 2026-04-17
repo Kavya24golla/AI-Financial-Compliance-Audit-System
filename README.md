@@ -103,10 +103,6 @@ Maintains complete traceability of all operations.
 
 ---
 
-## 🖼️ Visuals
-
-### 📌 Architecture Diagram
-![Architecture](architecture.png)
 
 ### 📌 Dashboard Preview
 ![Dashboard](demo.png)
